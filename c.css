@@ -1,0 +1,413 @@
+/* styles.css */
+
+/* Basic reset and styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: #000
+}
+
+header {
+  padding: 9px;
+  text-align: left;
+  font-size: 1em;
+  margin-top: -89px;
+}
+
+.site-name {
+  color: white;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.meta-logo {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  padding-top: 75px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+input#search-bar {
+  width: 100%;
+  height: 45px;
+  padding: 0 50px 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.35s ease, color 0.35s ease;
+}
+
+input#search-bar:focus {
+  border-color: #008ABF;
+  color: #008ABF;
+  border-width: 2px; /* add this line to increase the border thickness */
+}
+
+input#search-bar::placeholder {
+  transition: opacity 0.45s ease;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+      width: 90%;
+      padding: 0 10px;
+  }
+
+  input#search-bar {
+      height: 40px;
+      font-size: 0.9rem;
+      padding: 0 40px 0 15px;
+      border-radius: 10rem;
+
+  }
+
+  .search-icon {
+      width: 20px;
+      height: 20px;
+      left: -25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trending-bots {
+  margin: 20px;
+  text-align: center;
+  margin: 6vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nft-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nft {
+  max-width: 300px;
+  margin: 1rem;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+}
+
+.nft hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+
+.nft ins {
+  text-decoration: none;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+
+.nft .tokenImage {
+  border-radius: .5rem;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.nft .description {
+  margin: .5rem 2;
+  color: #a89ec9;
+}
+
+.nft .tokenInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft .price {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+
+.nft .price ins {
+  margin-left: -.3rem;
+  margin-right: .5rem;
+}
+
+.nft .duration {
+  display: flex;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: .2rem;
+}
+
+.nft .duration ins {
+  margin: .5rem;
+  margin-bottom: .4rem;
+}
+
+.nft .creator {
+  display: flex;
+  align-items: center;
+  margin-top: .2rem;
+  margin-bottom: -.3rem;
+}
+
+.nft .creator ins {
+  color: #a89ec9;
+  text-decoration: none;
+}
+
+.nft .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff22;
+  padding: .3rem;
+  margin: 0;
+  margin-right: .5rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px #000000aa;
+}
+
+.nft img {
+  border-radius: 100%;
+  border: 1px solid #ffffff22;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  margin: 0;
+}
+
+.nft::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: .7s all;
+}
+
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+
+.nft:hover::before {
+  filter: brightness(.5);
+  top: -100%;
+  left: 200%;
+}
+
+/* Footer styling */
+.nav-footer {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #000000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-icon {
+  width: 26px;
+}
+
+.nav-footer .nav-text {
+  font-size: 1.2em;
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+  footer {
+    display: non;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .description {
+     display: none;
+   }
+ }
+
+
+
+
+
+
+
+ /* SEARCH PAGE CSS SEARCH PAGE CSS SEARCH PAGE CSS*/
+
+ .card-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 20px; /* updated margin property */
+}
+
+.card {
+  width: 100px;
+  height: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #2bc6ec88;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px; /* add some space between the card and footer */
+
+}
+
+.card img {
+  width: 90%; /* make the image full-width */
+  max-height: 90px; /* set a maximum height (adjust this value as needed) */
+  object-fit: cover; /* scale the image to cover the entire area */
+  margin: 0 auto; /* center the image horizontally */
+  display: block; /* make the image a block element */
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.card {
+  background-color: #000; /* initial black background */
+  transition: background-color 0.3s ease-in-out; /* add transition effect */
+}
+
+.card:hover {
+  background-color: #f5f6f783; /* blue background on hover */
+  /* you can also use a gradient if you prefer */
+  /* background-image: linear-gradient(to bottom, #3498db, #4567b7); */
+}
+
+.footer {
+  position: relative; /* change the footer's position to relative */
+  clear: both; /* ensure the footer clears any floating elements */
+}
+
+
+
+
+
+
+/* PROFILE PAGE CSS PROFILE PAGE CSS PROFILE PAGE CSS*/
+
+
+
+
+ 
+
+
+
+
+
+
+
+
